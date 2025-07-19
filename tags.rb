@@ -55,6 +55,7 @@ OPERATORS = [
   Operator.new(3, VANG, DPR), # Fang, Vanilla
   Operator.new(3, VANG, DPR, DPS), # Plume, (Scavenger, Vigna, Chiave, Reed)
   Operator.new(4, VANG, DPR, HEA), # Myrtle
+  Operator.new(4, VANG, RANGD, DPR, SMN), # Beanstalk
   Operator.new(5, VANG, DPR, SUP), # Elysium, Zima
   Operator.new(5, VANG, CCL, DPR), # Texas
 
@@ -87,7 +88,7 @@ OPERATORS = [
   Operator.new(5, SNIP, AOE, DBF), # Meteorite, Sesa
 
   Operator.new(3, CAST, AOE), # Lava (Gitano)
-  Operator.new(3, CAST, DPS), # Steward (Leizi)
+  Operator.new(3, CAST, DPS), # Steward (Leizi, Iris)
   Operator.new(4, CAST, CCL, DPS), # Click
   Operator.new(4, CAST, AOE, SLO), # Greyy
   Operator.new(4, CAST, DPS, DBF), # Haze
@@ -154,7 +155,7 @@ def filter_combinations(combinations)
   end
 end
 
-OUTPUT_ORDER = [SMN, FRD, CCL, DBF, SUP, NUK, SHF, SPEC, SLO, HEA, SRV, DPS, DEF].freeze
+OUTPUT_ORDER = [FRD, CCL, DBF, SUP, NUK, SHF, SPEC, SMN, SLO, HEA, SRV, DPS, DEF, RANGD].freeze
 OutputLine = Struct.new(:tag, :rarity, :combinations) do
   def to_s
     out = +'  '
