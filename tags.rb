@@ -1,5 +1,7 @@
 #! /usr/bin/env ruby
 
+require 'date'
+
 TAGS = [
   VANG = 'Vanguard',
   GUAR = 'Guard',
@@ -175,6 +177,27 @@ def color(text, rarity)
   "\e[3#{{3 => '4', 4 => '5', 5 => '3'}[rarity]}m#{text}\e[0m"
 end
 
+def needed_recruitment_vouchers
+  now = Time.now.utc
+
+  next_monthly_reset = if now.month == 12
+    Time.utc(now.year + 1, 1, 1, 11, 0, 0)
+  else
+    Time.utc(now.year, now.month + 1, 1, 11, 0, 0)
+  end
+
+  remaining_days = ((next_monthly_reset - now) / (60 * 60 * 24)).to_i
+
+  next_monday_candidate = Time.utc(now.year, now.month, now.day, 11, 0, 0)
+  next_monday_candidate += 60 * 60 * 24 if now >= next_monday_candidate
+  next_monday_candidate += 60 * 60 * 24 until next_monday_candidate.wday == 1
+
+  remaining_mondays = ((next_monthly_reset - next_monday_candidate) / (60 * 60 * 24 * 7)).ceil
+  additional_weekly_vouchers = remaining_mondays * 10
+
+  puts "Keep at least #{remaining_days * 3 - additional_weekly_vouchers} recruitment vouchers (assuming 3 recruitments daily)"
+end
+
 output = OUTPUT_ORDER.to_h { |tag| [tag, OutputLine.new(tag, 3, { 4 => [], 5 => [] })] }
 [4, 5].each do |rarity|
   combinations_by_rarity[rarity].each do |combination|
@@ -193,3 +216,4 @@ end
 puts
 puts output.values.map(&:to_s).join("\n")
 puts
+needed_recruitment_vouchers
