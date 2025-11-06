@@ -155,7 +155,7 @@ def filter_combinations(combinations)
   end
 end
 
-OUTPUT_ORDER = [FRD, CCL, DBF, SUP, NUK, SHF, SPEC, SMN, SLO, HEA, SRV, DPS, DEF, RANGD].freeze
+OUTPUT_ORDER = [FRD, SMN, CCL, DBF, SUP, NUK, SHF, SPEC, SLO, HEA, SRV, DPS, DEF, RANGD].freeze
 OutputLine = Struct.new(:tag, :rarity, :combinations) do
   def to_s
     out = +'  '
