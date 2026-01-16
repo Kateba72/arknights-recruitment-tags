@@ -79,7 +79,7 @@ OPERATORS = [
   Operator.new(5, DEFR, DPS, DEF, SRV), # Vulcan
 
 #  Operator.new(1, SNIP, ROB, SUP), # 'Justice Knight'
-  Operator.new(3, SNIP, DPS), # Adnachiel, Kroos (Aciddrop, Vermeil, April, Blue Poison, GreyThroat, Platinum, Provence)
+  Operator.new(3, SNIP, DPS), # Adnachiel, Kroos (Aciddrop, Vermeil, April, Blue Poison, GreyThroat, Platinum, Provence, Toddifons)
   Operator.new(3, SNIP, AOE), # Catapult (Aosta, Executor)
   Operator.new(4, SNIP, DPS, SLO), # Ambriel, May (Andreana)
   Operator.new(4, SNIP, DPS, SRV), # Jessica
