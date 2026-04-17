@@ -54,72 +54,72 @@ class Operator
 end
 
 OPERATORS = [
-  Operator.new(3, VANG, DPR), # Fang, Vanilla
-  Operator.new(3, VANG, DPR, DPS), # Plume, (Scavenger, Vigna, Chiave, Reed)
-  Operator.new(4, VANG, DPR, HEA), # Myrtle
-  Operator.new(4, VANG, RANGD, DPR, SMN), # Beanstalk
-  Operator.new(5, VANG, DPR, SUP), # Elysium, Zima
-  Operator.new(5, VANG, CCL, DPR), # Texas
+  Operator.new(3, VANG, DPR), # 3*Fang, 3*Vanilla
+  Operator.new(3, VANG, DPR, DPS), # 3*Plume, (4*Scavenger, 4*Vigna, 5*Chiave, 5*Reed)
+  Operator.new(4, VANG, DPR, HEA), # 4*Myrtle
+  Operator.new(4, VANG, RANGD, DPR, SMN), # 4*Beanstalk
+  Operator.new(5, VANG, DPR, SUP), # 5*Elysium, 5*Zima
+  Operator.new(5, VANG, CCL, DPR), # 5*Texas
 
 #  Operator.new(1, GUAR, ROB, SUP), # Castle-3
-  Operator.new(3, GUAR, DPS, SRV), # Melantha (Matoimaru, Utage, Indra)
-  Operator.new(3, GUAR, DPS), # Midnight (Arene, Beehunter, Jackie, Mousse, Flint)
-  Operator.new(3, GUAR, AOE, SRV), # Popukar (Estelle, Broca, Specter)
-  Operator.new(4, GUAR, DPS, NUK), # Cutter
-  Operator.new(4, GUAR, DPS, SUP), # Dobermann (Swire)
-  Operator.new(4, GUAR, DPS, SLO), # Frostleaf
-  Operator.new(5, GUAR, DPS, DEF), # Astesia
-  Operator.new(5, GUAR, AOE, DPS), # Ayerscarpe
+  Operator.new(3, GUAR, DPS, SRV), # 3*Melantha (4*Matoimaru, 4*Utage, 5*Indra, 5*Akafuyu)
+  Operator.new(3, GUAR, DPS), # 3*Midnight (4*Arene, 4*Beehunter, 4*Jackie, 4*Mousse, 5*Flint)
+  Operator.new(3, GUAR, AOE, SRV), # 3*Popukar (4*Estelle, 5*Broca, 5*Specter)
+  Operator.new(4, GUAR, DPS, NUK), # 4*Cutter
+  Operator.new(4, GUAR, DPS, SUP), # 4*Dobermann (5*Swire)
+  Operator.new(4, GUAR, DPS, SLO), # 4*Frostleaf
+  Operator.new(5, GUAR, DPS, DEF), # 5*Astesia
+  Operator.new(5, GUAR, AOE, DPS), # 5*Ayerscarpe
 
 #  Operator.new(1, DEFR, DEF, ROB), # Friston-3
-  Operator.new(3, DEFR, DEF), # Beagle (Bubble, Cuora, Matterhorn)
-  Operator.new(3, DEFR, DEF, HEA), # Spot (Gummy, Hung, Nearl)
-  Operator.new(5, DEFR, DPS, DEF), # Asbestos, Liskarm
-  Operator.new(5, DEFR, DEF, SHF), # Croissant
-  Operator.new(5, DEFR, DPS, DEF, SRV), # Vulcan
+  Operator.new(3, DEFR, DEF), # 3*Beagle (4*Bubble, 4*Cuora, 4*Matterhorn)
+  Operator.new(3, DEFR, DEF, HEA), # 3*Spot (4*Gummy, 5*Hung, 5*Nearl)
+  Operator.new(5, DEFR, DPS, DEF), # 5*Asbestos, 5*Liskarm
+  Operator.new(5, DEFR, DEF, SHF), # 5*Croissant
+  Operator.new(5, DEFR, DPS, DEF, SRV), # 5*Vulcan
 
 #  Operator.new(1, SNIP, ROB, SUP), # 'Justice Knight'
-  Operator.new(3, SNIP, DPS), # Adnachiel, Kroos (Aciddrop, Vermeil, April, Blue Poison, GreyThroat, Platinum, Provence, Toddifons)
-  Operator.new(3, SNIP, AOE), # Catapult (Aosta, Executor)
-  Operator.new(4, SNIP, DPS, SLO), # Ambriel, May (Andreana)
-  Operator.new(4, SNIP, DPS, SRV), # Jessica
-  Operator.new(4, SNIP, DPS, DBF), # Meteor
-  Operator.new(4, SNIP, AOE, DPS), # Pinecone
-  Operator.new(4, SNIP, AOE, SLO), # Shirayuki
-  Operator.new(5, SNIP, DPS, NUK), # Firewatch
-  Operator.new(5, SNIP, AOE, DBF), # Meteorite, Sesa
+  Operator.new(3, SNIP, DPS), # 3*Adnachiel, 3*Kroos (4*Aciddrop, 4*Vermeil, 5*April, 5*Blue Poison, 5*GreyThroat, 5*Platinum, 5*Provence, 5*Toddifons)
+  Operator.new(3, SNIP, AOE), # 3*Catapult (5*Aosta, 5*Executor)
+  Operator.new(4, SNIP, DPS, SLO), # 4*Ambriel, 4*May (5*Andreana)
+  Operator.new(4, SNIP, DPS, SRV), # 4*Jessica
+  Operator.new(4, SNIP, DPS, DBF), # 4*Meteor
+  Operator.new(4, SNIP, AOE, DPS), # 4*Pinecone
+  Operator.new(4, SNIP, AOE, SLO), # 4*Shirayuki
+  Operator.new(5, SNIP, DPS, NUK), # 5*Firewatch
+  Operator.new(5, SNIP, AOE, DBF), # 5*Meteorite, 5*Sesa
 
-  Operator.new(3, CAST, AOE), # Lava (Gitano)
-  Operator.new(3, CAST, DPS), # Steward (Leizi, Iris)
-  Operator.new(4, CAST, CCL, DPS), # Click
-  Operator.new(4, CAST, AOE, SLO), # Greyy
-  Operator.new(4, CAST, DPS, DBF), # Haze
-  Operator.new(5, CAST, AOE, DEF), # Beeswax
-  Operator.new(5, CAST, AOE, NUK), # Leonhardt
-  Operator.new(5, CAST, DPS, HEA, SLO), # Nightmare
+  Operator.new(3, CAST, AOE), # 3*Lava (4*Gitano)
+  Operator.new(3, CAST, DPS), # 3*Steward (5*Leizi, 5*Iris)
+  Operator.new(4, CAST, CCL, DPS), # 4*Click
+  Operator.new(4, CAST, AOE, SLO), # 4*Greyy
+  Operator.new(4, CAST, DPS, DBF), # 4*Haze
+  Operator.new(5, CAST, AOE, DEF), # 5*Beeswax
+  Operator.new(5, CAST, AOE, NUK), # 5*Leonhardt
+  Operator.new(5, CAST, DPS, HEA, SLO), # 5*Nightmare
 
 #  Operator.new(1, MEDC, HEA, ROB), # Lancet-2
-  Operator.new(3, MEDC, HEA), # Ansel, Hibiscus (Myrrh, Perfumer, Sussuro, Silence)
-  Operator.new(4, MEDC, HEA, SUP), # Purestream (Ptilopsis, Warfarin)
+  Operator.new(3, MEDC, HEA), # 3*Ansel, 3*Hibiscus (4*Myrrh, 4*Perfumer, 4*Sussuro, 5*Silence, 5*Whisperain)
+  Operator.new(4, MEDC, HEA, SUP), # 4*Purestream (5*Ptilopsis, 5*Warfarin)
 
 #  Operator.new(1, SUPP, ELE, ROB), # PhonoR-0
-  Operator.new(3, SUPP, SLO), # Orchid (Earthspirit)
-  Operator.new(4, SUPP, HEA, SLO), # Podenco
-  Operator.new(5, SUPP, CCL, SLO), # Glaucus
-  Operator.new(5, SUPP, DPS, SLO), # Istina
-  Operator.new(5, SUPP, CCL, SMN), # Mayer
-  Operator.new(5, SUPP, DBF), # Pramanix, Shamare
-  Operator.new(5, SUPP, SUP, SRV), # Tsukinogi
+  Operator.new(3, SUPP, SLO), # 3*Orchid (4*Earthspirit)
+  Operator.new(4, SUPP, HEA, SLO), # 4*Podenco
+  Operator.new(5, SUPP, CCL, SLO), # 5*Glaucus
+  Operator.new(5, SUPP, DPS, SLO), # 5*Istina
+  Operator.new(5, SUPP, CCL, SMN), # 5*Mayer
+  Operator.new(5, SUPP, DBF), # 5*Pramanix, 5*Shamare
+  Operator.new(5, SUPP, SUP, SRV), # 5*Tsukinogi
 
 #  Operator.new(1, SPEC, NUK, ROB), # THRM-EX
-  Operator.new(4, SPEC, DEF, FRD), # Gravel
-  Operator.new(4, SPEC, DPS, FRD), # Jaye
-  Operator.new(4, SPEC, SHF), # Rope, Shaw
-  Operator.new(5, SPEC, DPS, SHF), # Cliffheart
-  Operator.new(5, SPEC, SHF, SLO), # FEater
-  Operator.new(5, SPEC, CCL, FRD), # Kafka, Project Red
-  Operator.new(5, SPEC, DPS, SRV), # Manticore
-  Operator.new(5, SPEC, DBF, FRD), # Waai Fu
+  Operator.new(4, SPEC, DEF, FRD), # 4*Gravel
+  Operator.new(4, SPEC, DPS, FRD), # 4*Jaye (5*Mr. Nothing)
+  Operator.new(4, SPEC, SHF), # 4*Rope, 4*Shaw
+  Operator.new(5, SPEC, DPS, SHF), # 5*Cliffheart
+  Operator.new(5, SPEC, SHF, SLO), # 5*FEater
+  Operator.new(5, SPEC, CCL, FRD), # 5*Kafka, 5*Project Red
+  Operator.new(5, SPEC, DPS, SRV), # 5*Manticore
+  Operator.new(5, SPEC, DBF, FRD), # 5*Waai Fu
 ].freeze
 
 def all_combinations
